@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+
+<body>
+    <section>
+
+
+    <div class="container">
+
+        <div class="user signInBox">
+            <div class="imgBox"><img src="/Image/Book_laptop.jpg" alt=""></div>
+        
+        
+            <div class="formBox">
+                <form action="">
+
+                    <h2>Sign In</h2>
+
+                    <input type="text" placeholder="Username">
+
+                    <input type="password" placeholder="Password">
+
+                    <p class="sign forogt"><a href="#" >Forgot Password?</a></p>
+
+                    <div class="remember">
+                        <label>
+                            <input type="checkbox">Remember Me
+                        </label>
+                    </div>
+
+                    <input type="submit" value="Login">
+
+                    <p class="sign In">Admin? <a href="admin.html" onclick="toggleForm();">Sign In here</a></p>
+
+                    <p class="sign In">Don't have an Account? <a href="#" onclick="toggleForm();">Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="user signUpBox"> 
+            <div class="formBox">
+                <form action="">
+                    <h2>Create an Account</h2>
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Email Address">
+                    <input type="password" placeholder="Create Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <input type="submit" value="Sign Up">
+                    <p class="sign Up">Already have an Account? <a href="#"  onclick="toggleForm();">Sign in</a></p>
+                </form>
+            </div>
+            <div class="imgBox"><img src="/Image/2011.i301.044.Language courses isometric background.jpg" alt=""></div>
+        </div>
+
+        
+
+</div>
+</section>
+<script>
+    function toggleForm(){
+        section =document.querySelector('section');
+        container =document.querySelector('.container');
+        
+        container.classList.toggle('active');
+        section.classList.toggle('active');
+
+    }
+</script>
+</body>
+</html>
